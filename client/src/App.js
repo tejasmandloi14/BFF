@@ -18,7 +18,7 @@ function App() {
         e.preventDefault();
         try {
             const jsonInput = JSON.parse(inputData); // Parse input as JSON
-            const res = await axios.post('http://localhost:5000/bfhl', {
+            const res = await axios.post('https://be-one-brown.vercel.app/bfhl', {
                 data: jsonInput.data,
             });
             setResponse(res.data); // Store API response
